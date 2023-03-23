@@ -235,8 +235,28 @@ body{
 }
 
 @media (max-width: 450px) {
+    .profile {
+        width: 300px;
+        margin: 0;
+    }
     .editor {
         width: 60%;
+        margin: 35px auto;
+    }
+    .inner {
+        padding: 0;
+        display: block;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 330px) {
+    .profile {
+        width: 250px;
+        margin: 0;
+    }
+    .editor {
+        width: 70%;
         margin: 35px auto;
     }
     .inner {
