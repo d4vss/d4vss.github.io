@@ -34,7 +34,7 @@ function main() {
     });
 
     avatarRemove.addEventListener("click", () => {
-        avatar.src = "avatar_demo.png";
+        avatar.src = "../81194615.jpg";
         avatarRemove.classList.add("hidden");
         avatarSet.classList.remove("hidden");
     });
