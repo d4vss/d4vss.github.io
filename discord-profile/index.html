@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Profile</title>
+
+    <link rel="icon" href="../81194615.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="profile">
+        <span class="no-nitro-banner"></span>
+        <img class="banner hidden" alt="Discord Banner" draggable="false">
+        <img class="avatar" src="../81194615.jpg" alt="Discord Profile Picture" draggable="false">
+
+        <div class="box">
+            <span class="name" id="username">Username<span class="tag">#<span id="tag">0000</span></span>
+                <div class="splitter"></div>
+
+                <div class="info">
+                    <h6 class="title">About me</h6>
+                    <textarea spellcheck="false" autocomplete="off" class="value input" id="about-me"
+                        placeholder="Enter custom about me!"></textarea>
+                </div>
+
+                <div class="info">
+                    <h6 class="title">Discord member since</h6>
+                    <input spellcheck="false" autocomplete="off" class="value input" placeholder="Jan 01, 1970">
+                </div>
+
+                <div class="info">
+                    <h6 class="title">Note</h6>
+                    <textarea spellcheck="false" autocomplete="off" class="value input save" id="note"
+                        placeholder="Click to add note"></textarea>
+                </div>
+        </div>
+    </div>
+
+    <button class="editor-button">Editor</button>
+
+    <div class="editor hidden">
+        <svg class="close-editor" fill="#d4d4d8" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.775 460.775" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path> </g></svg>
+        <div class="editor-box">
+            <h6 class="title">Username (WIP)</h6>
+            <input spellcheck="false" autocomplete="off" class="value input" id="usernamei" placeholder="Username" disabled>
+        </div>
+
+        <div class="editor-box">
+            <h6 class="title">Tag (WIP)</h6>
+            <input spellcheck="false" autocomplete="off" class="value input" id="tagi" placeholder="0000" disabled>
+        </div>
+
+        <br clear="all">
+
+        <div class="inner">
+            <input type="file" id="avatar_upload" hidden>
+            <span class="avatar-remove hidden rm">Remove avatar</span>
+            <label for="avatar_upload" class="upload avatar-set">Set avatar</label>
+        </div>
+
+        <div class="inner">
+            <input type="file" id="banner_upload" hidden>
+            <span class="banner-remove hidden rm">Remove banner</span>
+            <label for="banner_upload" class="upload banner-set">Set banner</label>
+        </div>
+
+        <div class="inner">
+            <input class="color-input" type="color" id="set-color" hidden>
+            <label for="set-color" class="upload color-set">Set color</label>
+        </div>
+
+        <p class="source">Source: <a target="_blank" href="https://github.com/d4vss/d4vss.github.io">GitHub</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
