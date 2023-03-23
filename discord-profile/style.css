@@ -233,3 +233,15 @@ body{
 .color-input {
     margin-top: 40px;
 }
+
+@media (max-width: 450px) {
+    .editor {
+        width: 60%;
+        margin: 35px auto;
+    }
+    .inner {
+        padding: 0;
+        display: block;
+        margin-bottom: 40px;
+    }
+}
