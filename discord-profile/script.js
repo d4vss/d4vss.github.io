@@ -81,8 +81,13 @@ function main() {
     // About me and note expand
     function expand(id) {
         const element = document.getElementById(id);
-        element.style.height = "24";
-        element.style.height = element.scrollHeight + "px";
+        var count = 0;
+        for (let i = 0; i < element.value.length; i++) {
+            if (element.value[i] == "\n") {
+                    count++;
+            }
+        }
+        element.style.height = (count*22+22) + "px";
     }
 
     document.addEventListener("DOMContentLoaded", () => {
